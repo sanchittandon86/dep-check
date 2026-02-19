@@ -13,15 +13,9 @@ export default defineConfig({
   },
   server: { strictPort: true, port: 5175 },
   build: {
-    rollupOptions: {
-      output: {
-        // Fixed name for remote entry so host can load /assets/remoteEntry.js
-        chunkFileNames: (chunkInfo) => {
-          if (chunkInfo.facadeModuleId?.includes('remoteEntry')) return 'assets/remoteEntry.js'
-          return 'assets/[name]-[hash].js'
-        },
-      },
-    },
+    target: 'esnext',
+    minify: false,
+    cssCodeSplit: false,
   },
   plugins: [
     tailwindcss(),

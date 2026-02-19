@@ -12,14 +12,9 @@ export default defineConfig({
   },
   server: { strictPort: true, port: 5174 },
   build: {
-    rollupOptions: {
-      output: {
-        chunkFileNames: (chunkInfo) => {
-          if (chunkInfo.facadeModuleId?.includes('remoteEntry')) return 'assets/remoteEntry.js'
-          return 'assets/[name]-[hash].js'
-        },
-      },
-    },
+    target: 'esnext',
+    minify: false,
+    cssCodeSplit: false,
   },
   plugins: [
     react({
