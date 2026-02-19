@@ -5,14 +5,14 @@
       "path": "/dashboard",
       "label": "Dashboard",
       "icon": "LayoutDashboard",
-      "baseUrl": "dep-check-bor5.vercel.app"
+      "baseUrl": "https://dep-check-tawny.vercel.app"
     },
     {
       "id": "oms",
       "path": "/oms",
       "label": "Order Management",
       "icon": "ClipboardList",
-      "baseUrl": "dep-check-tqqz.vercel.app"
+      "baseUrl": "https://dep-check-tqqz.vercel.app"
     }
   ]
 }
