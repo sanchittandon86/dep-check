@@ -1,18 +1,1 @@
-{
-  "modules": [
-    {
-      "id": "dashboard",
-      "path": "/dashboard",
-      "label": "Dashboard",
-      "icon": "LayoutDashboard",
-      "baseUrl": "http://localhost:5175"
-    },
-    {
-      "id": "oms",
-      "path": "/oms",
-      "label": "Order Management",
-      "icon": "ClipboardList",
-      "baseUrl": "http://localhost:5174"
-    }
-  ]
-}
+{"modules":[{"id":"dashboard","path":"/dashboard","label":"Dashboard","icon":"LayoutDashboard","baseUrl":"https://dep-check-tawny.vercel.app/"},{"id":"oms","path":"/oms","label":"Order Management","icon":"ClipboardList","baseUrl":"https://dep-check-tqqz.vercel.app/"}]}
