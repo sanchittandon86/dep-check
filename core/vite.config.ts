@@ -35,11 +35,7 @@ export default defineConfig({
     federation({
       name: 'core',
       remotes: federationRemotes,
-      shared: {
-        react: { requiredVersion: '^19.0.0', singleton: true },
-        'react-dom': { requiredVersion: '^19.0.0', singleton: true },
-        'react-router-dom': { singleton: true },
-      },
+      shared: ['react', 'react-dom', 'react-router-dom'],
     }),
   ],
   resolve: {
