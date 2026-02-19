@@ -1,20 +1,17 @@
 {
   "headers": [
     {
-      "source": "/remoteEntry.js",
+      "source": "/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    },
-    {
-      "source": "/assets/remoteEntry.js",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, HEAD, OPTIONS" }
       ]
     }
   ],
   "rewrites": [
-    { "source": "/remoteEntry.js", "destination": "/assets/remoteEntry.js" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "^/(?!.*\\.(js|css|png|jpg|svg|ico|woff|woff2|ttf|json)$).*$",
+      "destination": "/index.html"
+    }
   ]
 }
